@@ -26,13 +26,14 @@ fn test_fahr_to_cel() {
     let fahr_temps = vec![10.0, 100.0, 200.0];
     let expected_cel_temps = vec![-12.22,37.78 ,93.33];
     let actual_cel_temps = fahr_to_cel_v(fahr_temps.clone());
-    fahr_to_cel_recursion(&mut fahr_temps.clone(), 0);
+    let mut a = fahr_temps.clone();
+    fahr_to_cel_recursion(&mut a, 0);
 
     //test for ordinary loop
     assert_eq!(expected_cel_temps, actual_cel_temps);
 
     //test for recursion
-    assert_eq!(expected_cel_temps, fahr_temps);
+    assert_eq!(expected_cel_temps, a);
 }
 
 #[test]

@@ -1,3 +1,5 @@
+//to run cargo run --bin grades
+
 fn split_grades(grades: Vec<&str>) -> (Vec<&str>, Vec<&str>) {
     let mut above_d = Vec::new();
     let mut d_and_f = Vec::new();

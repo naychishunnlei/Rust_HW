@@ -21,7 +21,7 @@ fn split_scores(scores: Vec<u32>) -> (Vec<(&'static str, u32)>, Vec<(&'static st
             let grade = get_grade(score);
 
             match grade {
-                "A+" | "B" | "C" =>  above_d.push((grade, score)),
+                "A+" | "A" | "B" | "C" =>  above_d.push((grade, score)),
                 "D" | "F" => d_and_f.push((grade, score)),
                 _ => {}
                 

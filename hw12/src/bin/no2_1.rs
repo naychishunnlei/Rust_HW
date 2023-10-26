@@ -1,4 +1,5 @@
 #[derive(Clone)]
+#[allow(dead_code)]
 enum Text {
     Plain(String),
     Repeated(Box<Text>, usize),

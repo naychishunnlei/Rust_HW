@@ -102,6 +102,7 @@ impl RepeatedText {
     }
 }
 
+#[allow(dead_code)]
 impl JoinedText {
     fn with_parts(texts: &Vec<Box<dyn Text>>, separator: &dyn Text) -> JoinedText {
         JoinedText {
